@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Init</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #cfa96d;
+    font-family: "Times New Roman", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #box {
+    max-width: 420px;
+    padding: 24px;
+    border-left: 2px solid #cfa96d;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  .line {
+    margin-bottom: 14px;
+    opacity: 0;
+    animation: appear 1s forwards;
+  }
+
+  .line:nth-child(1) { animation-delay: 1s; }
+  .line:nth-child(2) { animation-delay: 2.5s; }
+  .line:nth-child(3) { animation-delay: 4s; }
+  .line:nth-child(4) { animation-delay: 6s; }
+
+  @keyframes appear {
+    to { opacity: 1; }
+  }
+</style>
+</head>
+
+<body>
+
+<div id="box">
+  <div class="line">Inicializando observação…</div>
+  <div class="line">Análise estética concluída.</div>
+  <div class="line">
+    “Há belezas que pedem silêncio,<br>
+    porque descrevê-las seria diminuí-las.”
+  </div>
+  <div class="line">
+    O ruivo não é apenas cor —<br>
+    é assinatura rara da natureza.
+  </div>
+</div>
+
+</body>
+</html>
